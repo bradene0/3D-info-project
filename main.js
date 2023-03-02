@@ -27,7 +27,7 @@ scene.add(torus)
 //Allows render to be called over and over (game loop)
 function animate() {
   requestAnimationFrame( animate );
-  renderer.render( );
+  renderer.render(scene, camera );
 }
 
-animate();
+animate()
