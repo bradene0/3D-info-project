@@ -1,0 +1,1 @@
+This is a project based off of the youtuber Fireship. This is a 3D Information Page Using three js, css, html, and node
