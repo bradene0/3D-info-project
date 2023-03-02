@@ -27,6 +27,12 @@ scene.add(torus)
 //Allows render to be called over and over (game loop)
 function animate() {
   requestAnimationFrame( animate );
+
+  //Adds Rotation
+  torus.rotation.x += 0.01;
+  torus.rotation.y += 0.006;
+  torus.rotation.z += 0.02;
+
   renderer.render(scene, camera );
 }
 
