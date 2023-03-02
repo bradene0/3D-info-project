@@ -26,7 +26,10 @@ const torus = new THREE.Mesh( geometry, material);
 //Renders Scene
 scene.add(torus)
 
-//Allows render to be called over and over
+//Allows render to be called over and over (game loop)
 function animate() {
   requestAnimationFrame( animate );
+  renderer.render( );
 }
+
+animate();
