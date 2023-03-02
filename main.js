@@ -24,11 +24,12 @@ const torus = new THREE.Mesh( geometry, material);
 //Renders Scene
 scene.add(torus)
 
-//Adds Lighting, point light emits light in all directions as if it were a lightbulb
+//Adds Lighting, point light emits light in all directions as if it were a lightbulb, lights inside in this case
 const pointLight = new THREE.PointLight(0xffffff)
 pointLight.position.set(5,5,5);
 
-scene.add(pointLight);
+const ambientLight = new THREE.AmbientLight(0xffffff);
+scene.add(pointLight, ambientLight);//Ambient light is akin to a floodlight in the room
 
 //Allows render to be called over and over (game loop)
 function animate() {
