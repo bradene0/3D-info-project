@@ -84,27 +84,32 @@ function addStar() {
     );
   scene.add(moon);
 //Moves moon
-  moon.position.z - 30;
+  moon.position.z = 20;
   moon.position.setX(-10);
+
+  cat.position.z = -3;
+  cat.position.x = 22;
+  cat.position.y = 12;
 
   function moveCamera() {
     //Calculates where user is scrolled to
     const t = document.body.getBoundingClientRect().top;
     //Changes activity of objects wherever function is called
-    moon.rotation.x += 0.05;
+    moon.rotation.x += 0.08;
     moon.rotation.y += 0.075;
-    moon.rotation.z += 0.05;
+    moon.rotation.z += 0.8;
 
-    cat.rotation.y +=0.01;
-    cat.rotation.z += 0.01;
+    cat.rotation.y +=0.06;
+    cat.rotation.z += 0.02;
 
     //Changes position of camera itself
-    camera.position.z = t * -0.01;
-    camera.position.x = t * -0.0002;
-    camera.position.y = t * -0.0003;
+    
+    camera.position.x = t * -0.001;
+    camera.position.y = t * -0.001;
   }
-
-  document.body.onscroll = moveCamera
+//14:06
+  document.body.onscroll = moveCamera;
+  moveCamera();
 
 
 
