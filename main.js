@@ -67,7 +67,7 @@ function addStar() {
     new THREE.MeshBasicMaterial( {map: catTexture})
   );
 
-
+  scene.add(cat);
 
 
 //Allows render to be called over and over (game loop)
