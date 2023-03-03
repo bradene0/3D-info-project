@@ -106,6 +106,9 @@ function addStar() {
     
     camera.position.x = t * -0.001;
     camera.position.y = t * -0.001;
+    /* This feature not currently working
+    camera.position.z = t * -0.0002;
+    */
   }
 //14:06
   document.body.onscroll = moveCamera;
