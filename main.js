@@ -1,6 +1,8 @@
 import './style.css'
 
 import * as THREE from 'three';
+//Allows us to move around scene using mouse
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene();
 
@@ -31,6 +33,13 @@ pointLight.position.set(5,5,5);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);//Ambient light is akin to a floodlight in the room
 
+const lightHelper = new THREE.PointLightHelper(pointLight) //Adds visible light wireframe
+const gridHelper = new THREE.GridHelper(200, 50); //Adds 3D grid to screen
+scene.add(lightHelper, gridHelper)
+
+const controls = new OrbitControls(camera, render.domElement); //Listens to DOM events on mouse and updates camera position accordingly
+
+
 //Allows render to be called over and over (game loop)
 function animate() {
   requestAnimationFrame( animate );
@@ -43,4 +52,6 @@ function animate() {
   renderer.render(scene, camera );
 }
 
-animate()
+animate() 
+
+/* !!!!! You are at 8:42 of the tutorial video !!! */ 
