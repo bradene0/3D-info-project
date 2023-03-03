@@ -95,8 +95,11 @@ function addStar() {
     moon.rotation.y += 0.075;
     moon.rotation.z += 0.05;
 
-    cat.rotation.y +=.02;
+    cat.rotation.y +=0.02;
     cat.rotation.z += 0.02;
+
+    //Changes position of camera itself
+    camera.position.z = t * -0.01;
   }
 
   document.body.onscroll = moveCamera
