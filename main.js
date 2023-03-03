@@ -87,6 +87,20 @@ function addStar() {
   moon.position.z - 30;
   moon.position.setX(-10);
 
+  function moveCamera() {
+    //Calculates where user is scrolled to
+    const t = document.body.getBoundingClientRect().top;
+    //Changes activity of objects wherever function is called
+    moon.rotation.x += 0.05;
+    moon.rotation.y += 0.075;
+    moon.rotation.z += 0.05;
+
+    cat.rotation.y +=.02;
+    cat.rotation.z += 0.02;
+  }
+
+  document.body.onscroll = moveCamera
+
 
 
 
