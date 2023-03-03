@@ -1,89 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div id="app"></div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <canvas id="bg"></canvas>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <main>
+  <header>
+    <h1>Greg's Editing</h1>
+    <p>Welcome to my portfolio</p>
+  </header>
+  <blockquote>
+    <p>My edited videos are out of this world!</p>
+  </blockquote>
+  <section>
+    <h2>My Beliefs</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt facere sed id dignissimos perferendis eos odio suscipit velit! Amet perferendis necessitatibus minima quod fugiat voluptatibus omnis cum eligendi libero.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti, voluptatibus repudiandae explicabo ducimus iusto alias magnam quaerat et cupiditate consequuntur iste. Aut laudantium beatae delectus reprehenderit deleniti quo dicta.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia saepe incidunt architecto consequatur sapiente possimus totam accusamus commodi doloribus quasi? Voluptas possimus deserunt illo perferendis quos ullam expedita consectetur qui!
+    </p>
+  </section>
+
+  <section class="light">
+    <h2>Projects</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, consequatur culpa expedita optio omnis quidem, cupiditate ratione quis totam earum atque nostrum nesciunt? Eligendi iure molestiae similique commodi in Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, animi qui ipsum illum modi expedita sit nemo deserunt assumenda distinctio iure. Minima eveniet laboriosam pariatur ipsam perferendis debitis corrupti voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta error officia quisquam placeat obcaecati nemo molestiae accusantium, sint distinctio libero ut id deleniti qui non vero sequi optio tempora ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, asperiores numquam! Tempore ducimus, animi, molestias libero similique dignissimos nesciunt reprehenderit a magni quod temporibus beatae possimus eum facilis. Amet, ipsam!
+    </p>
+
+    <h2>Accomplishments</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolore deleniti nisi tempore dolorum officiis in aliquid laboriosam dignissimos quia odit tenetur saepe quis iusto perferendis quasi reiciendis, quibusdam repudiandae. Incidunt mollitia nesciunt, optio illo dolore reiciendis provident cumque, assumenda, ut debitis ad quibusdam quisquam aspernatur. Et nisi provident dolor eius obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores nobis provident temporibus est enim, minus assumenda repellendus pariatur corrupti eos numquam a laborum error debitis praesentium, impedit ipsam id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum cum reiciendis provident alias corporis, at fugiat totam sint porro? Quaerat nihil deserunt fugiat eligendi in odio ut. Nobis, harum?
+    </p>
+  </section>
+  <blockquote>
+    <p>This is an F no  <br>-Greg Evans</p>
+  </blockquote>
+  <section class="left">
+  <h2>Work History</h2>
+    <h3>Von Maur</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur debitis at, quibusdam temporibus harum eos aspernatur commodi enim neque ducimus vitae a, illo voluptates cupiditate, ipsa consequatur. Voluptas, deserunt voluptatum!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet cupiditate, maiores commodi aspernatur facere ex? Maxime magni, animi dolorem hic dolor unde ab quia accusantium voluptatum omnis, enim impedit aspernatur.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis iure aliquid minus dicta nam amet! Velit, deleniti odit, iusto, sit officiis ipsum qui laudantium adipisci dicta atque necessitatibus ipsam natus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos, quo dolor, ab similique, porro necessitatibus facilis quia accusamus odit expedita eum pariatur adipisci id veniam est perferendis explicabo aliquam?
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam sit distinctio dolorem minima earum iure, libero dolore tenetur aperiam cum sed error fugit quaerat velit molestias voluptatibus saepe excepturi quae!
+      <ul>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos accusamus ad cum, aspernatur repudiandae, quos sint rem nam harum alias quam id. Delectus qui perspiciatis velit necessitatibus! Nihil, eius vel?
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit, odio vitae asperiores voluptatem molestias aspernatur neque similique sed minus esse, laudantium quia molestiae ullam delectus nulla? Et, nobis perspiciatis!
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque illum, velit voluptatem iusto praesentium. Aliquid quis minima fuga culpa in dolor ipsam, molestiae praesentium. Impedit omnis obcaecati dolores cupiditate!
+        </li>
+      </ul>
+    </p>
+    <h3>Cornerstone UMC</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur deserunt excepturi ut odio architecto! Hic, ea? Ratione, cupiditate quasi vel laudantium, ut blanditiis nihil libero excepturi, voluptas aperiam magni nesciunt.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus excepturi doloremque nesciunt temporibus nostrum maiores facilis quis deserunt labore. Facere atque eos neque quod sapiente recusandae pariatur molestias maiores assumenda.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id inventore quae eius qui, magni quis laudantium nobis minus vero explicabo doloremque esse, saepe autem quo eligendi, odio aperiam molestias!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quidem, non repellat rerum quaerat quia id totam dolore molestiae quas vel assumenda delectus aperiam illo nostrum aspernatur optio quo expedita.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatibus, quod voluptates iusto maxime tempore. Laboriosam dolores labore cumque quas delectus reprehenderit? Adipisci, architecto veniam labore libero illo ullam delectus.
+    </p>
+  </section>
+
+    <blockquote>
+      <p>Thank you for the opportunity!</p>
+    </blockquote>
+
+  </main>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
