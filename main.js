@@ -56,7 +56,7 @@ function addStar() {
 //Determines and places number of stars
   Array(200).fill().forEach(addStar)
 //Adds space.png as background
-  const spaceTexture = new THREE.TextureLoader().load('space.png');
+  const spaceTexture = new THREE.TextureLoader().load('space.jpg');
   scene.background = spaceTexture;
 
 
