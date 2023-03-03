@@ -52,6 +52,8 @@ function addStar() {
   scene.add(star)
 }
 
+//Determines and places number of stars
+  Array(200).fill().forEach(addStar)
 
 //Allows render to be called over and over (game loop)
 function animate() {
