@@ -55,6 +55,8 @@ function addStar() {
 //Determines and places number of stars
   Array(200).fill().forEach(addStar)
 
+  const spaceTexture = new THREE.TextureLoader().load('space.png');
+
 //Allows render to be called over and over (game loop)
 function animate() {
   requestAnimationFrame( animate );
