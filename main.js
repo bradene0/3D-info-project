@@ -83,6 +83,9 @@ function addStar() {
       }) 
     );
   scene.add(moon);
+//Moves moon
+  moon.position.z - 30;
+  moon.position.setX(-10);
 
 
 
