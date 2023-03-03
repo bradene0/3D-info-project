@@ -1,1 +1,1 @@
-This is a project based off of the youtuber Fireship. This is a 3D Information Page Using three js, css, html, and node
+This project is from a tutorial by Fireship.io. I altered many elements in order to customize the site, however most images are from Fireship, along with the CSS since I have yet to learn Grid and have been sticking to flexbox. I built this website using Javascript, Three JS, Node JS, HTML5, and CSS3. Thank you for reading.
