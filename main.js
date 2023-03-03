@@ -39,6 +39,19 @@ scene.add(lightHelper, gridHelper)
 
 const controls = new OrbitControls(camera, renderer.domElement); //Listens to DOM events on mouse and updates camera position accordingly
 
+function addStar() {
+  //Creates stars
+  const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+  const material = new THREE.MeshStandardMaterial( {color: 0xffffff})
+  const star = new THREE.Mesh( geometry, material);
+//Randomly selects positions of stars
+  const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
+//Positions stars
+  star.position.set(x, y, z);
+  //Adds stars to scene
+  scene.add(star)
+}
+
 
 //Allows render to be called over and over (game loop)
 function animate() {
