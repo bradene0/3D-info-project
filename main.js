@@ -37,7 +37,7 @@ const lightHelper = new THREE.PointLightHelper(pointLight) //Adds visible light 
 const gridHelper = new THREE.GridHelper(200, 50); //Adds 3D grid to screen
 scene.add(lightHelper, gridHelper)
 
-const controls = new OrbitControls(camera, render.domElement); //Listens to DOM events on mouse and updates camera position accordingly
+const controls = new OrbitControls(camera, renderer.domElement); //Listens to DOM events on mouse and updates camera position accordingly
 
 
 //Allows render to be called over and over (game loop)
@@ -48,6 +48,8 @@ function animate() {
   torus.rotation.x += 0.01;
   torus.rotation.y += 0.006;
   torus.rotation.z += 0.02;
+
+  controls.update(); // Makes certain orbit control changes are reflected in UI
 
   renderer.render(scene, camera );
 }
