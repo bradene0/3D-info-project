@@ -54,9 +54,21 @@ function addStar() {
 
 //Determines and places number of stars
   Array(200).fill().forEach(addStar)
-
+//Adds space.png as background
   const spaceTexture = new THREE.TextureLoader().load('space.png');
   scene.background = spaceTexture;
+
+
+ //Cat Box
+  const catTexture = new THREE.TextureLoader().load('cat.jpeg');
+
+  const cat = new THREE.Mesh (
+    new THREE.BoxGeometry(3,3,3),
+    new THREE.MeshBasicMaterial( {map: catTexture})
+  );
+
+
+
 
 //Allows render to be called over and over (game loop)
 function animate() {
