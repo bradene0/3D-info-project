@@ -3,6 +3,7 @@ import './style.css'
 import * as THREE from 'three';
 //Allows us to move around scene using mouse
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import { DepthTexture } from 'three';
 
 const scene = new THREE.Scene();
 
@@ -72,11 +73,13 @@ function addStar() {
 //Moon
 
     const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+    const depthTexture = new THREE.TextureLoader().load('normal.jpg');
 
     const moon = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),
       new THREE.MeshStandardMaterial( {
         map: moonTexture,
+        normalMap: depthTexture
       }) 
     );
   scene.add(moon);
