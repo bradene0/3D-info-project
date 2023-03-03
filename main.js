@@ -69,6 +69,20 @@ function addStar() {
 
   scene.add(cat);
 
+//Moon
+
+    const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+
+    const moon = new THREE.Mesh (
+      new THREE.SphereGeometry(3, 32, 32),
+      new THREE.MeshStandardMaterial( {
+        map: moonTexture,
+      })
+    );
+
+
+
+
 
 //Allows render to be called over and over (game loop)
 function animate() {
