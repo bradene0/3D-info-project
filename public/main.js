@@ -2,7 +2,7 @@
 
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
 //Allows us to move around scene using mouse
-import {OrbitControls} from '/three/examples/jsm/controls/OrbitControls';
+//import {OrbitControls} from '/three/examples/jsm/controls/OrbitControls'; 
 
 
 const scene = new THREE.Scene();
@@ -38,7 +38,7 @@ const lightHelper = new THREE.PointLightHelper(pointLight) //Adds visible light 
 const gridHelper = new THREE.GridHelper(200, 50); //Adds 3D grid to screen
 scene.add(lightHelper, gridHelper)
 
-const controls = new OrbitControls(camera, renderer.domElement); //Listens to DOM events on mouse and updates camera position accordingly
+//const controls = new OrbitControls(camera, renderer.domElement); //Listens to DOM events on mouse and updates camera position accordingly
 
 function addStar() {
   //Creates stars
@@ -80,7 +80,7 @@ function addStar() {
       new THREE.SphereGeometry(3, 32, 32),
       new THREE.MeshStandardMaterial( {
         map: moonTexture,
-        normalMap: depthTexture
+      //  normalMap: depthTexture
       }) 
     );
   scene.add(moon);
@@ -128,7 +128,7 @@ function animate() {
   torus.rotation.y += 0.006;
   torus.rotation.z += 0.02;
 
-  controls.update(); // Makes certain orbit control changes are reflected in UI
+ // controls.update(); // Makes certain orbit control changes are reflected in UI
 
   renderer.render(scene, camera );
 }
