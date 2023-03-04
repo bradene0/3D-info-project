@@ -1,8 +1,8 @@
 import '../public/style.css'
 
-import * as THREE from 'vendor/three/build/three.module.js';
+import * as THREE from '/vendor/three/build/three.module.js';
 //Allows us to move around scene using mouse
-import {OrbitControls} from 'vendor/three/build/three.module.js';
+import {OrbitControls} from '/vendor/three/build/three.module.js';
 
 
 const scene = new THREE.Scene();
