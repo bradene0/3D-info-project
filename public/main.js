@@ -1,9 +1,9 @@
 import './style.css'
 
-import * as THREE from 'three';
+import * as THREE from './js/three.module.js';
 //Allows us to move around scene using mouse
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { DepthTexture } from 'three';
+import { DepthTexture } from './js/three.module.js';
 
 const scene = new THREE.Scene();
 
