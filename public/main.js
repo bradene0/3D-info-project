@@ -74,7 +74,7 @@ function addStar() {
 
     const moonTexture = new THREE.TextureLoader().load('moon.jpg');
     /*
-    const depthTexture = new THREE.TextureLoader().load('normal.jpg');
+    const depthTexture = new THREE.TextureLoader().load('normal.jpg'); Leaving in for now, will fix in next version
 */
     const moon = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),
