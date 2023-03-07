@@ -135,4 +135,3 @@ function animate() {
 
 animate() 
 
-/* !!!!! You are at 8:42 of the tutorial video !!! */ 
