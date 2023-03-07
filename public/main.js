@@ -1,9 +1,10 @@
 //import '../public/style.css'
 
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
-//Allows us to move around scene using mouse
-//import {OrbitControls} from '/three/examples/jsm/controls/OrbitControls'; 
-
+/*Allows us to move around scene using mouse
+import {OrbitControls} from '/three/examples/jsm/controls/OrbitControls'; 
+Orbit controls is not included in the cdn source i found for threeJS, eventually
+I will either remove it entirely or import it directly from another source */
 
 const scene = new THREE.Scene();
 
