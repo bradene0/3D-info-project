@@ -136,8 +136,8 @@ function animate() {
 
 animate() 
  
-/* From scrambled-meggs repo
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+/* From scrambled-meggs repo */
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ' ";
 
 document.querySelector("h1").onmouseover = event => {
    let iterations = 0;
@@ -156,4 +156,4 @@ document.querySelector("h1").onmouseover = event => {
     iterations += 1 / 3;
    }, 33);
 }
-*/
+
