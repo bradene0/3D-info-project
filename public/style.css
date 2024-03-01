@@ -4,7 +4,7 @@ canvas {
   top: 0;
   left: 0;
 }
-
+#todo switch to tailwind
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
   --spacing: 350px;
